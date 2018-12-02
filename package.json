@@ -1,0 +1,13 @@
+{
+  "name": "@aula/webplayer",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/webplayer-server"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "firebase": "^5.6.0"
+  }
+}
