@@ -33,3 +33,12 @@ curl http://127.0.0.1:3000/api/v1/storage
 - Storage interface defs v2
 - Renamed Presence to NowPlaying
 - Updated readme
+
+### Possible improvements
+
+- Development experience isn't quite good, need to add server reloads at the very least
+- Missing tons of real functionality still
+- Could use better naming for routes/libs (specially the storage routes)
+- Need to finish the signatures of now-playing (still not well thought)
+- Missing middlewares to upload big files
+- Missing production scripts/deployment strategy
