@@ -5,6 +5,9 @@
   "workspaces": [
     "packages/webplayer-server"
   ],
+  "scripts": {
+    "dev": "env NODE_ENV=development node index.js"
+  },
   "main": "index.js",
   "dependencies": {
     "dotenv": "^6.1.0",

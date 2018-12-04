@@ -4,5 +4,7 @@ module.exports = {
   get: (req, res, next) => {
     res.json({ foo: "bar" });
   },
-  post: (req, res, next) => {}
+  stream: (req, res, next) => {},
+  download: (req, res, next) => {},
+  upload: (req, res, next) => {}
 };
