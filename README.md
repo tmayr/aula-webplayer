@@ -34,6 +34,14 @@ curl http://127.0.0.1:3000/api/v1/storage
 - Renamed Presence to NowPlaying
 - Updated readme
 
+#### 40 minutes, Sunday, December 9
+
+- Upload/List are now working
+- Deleted methods that were never gonna get used (download/stream)
+- Added Mutter, Nodemon and Cors dependancies
+- Added a stream-test.html to see if files play from S3 (copy-paste from examples on the web)
+- Removed root index.js, packages scripts are now run through workspaces
+
 ### Possible improvements
 
 - Development experience isn't quite good, need to add server reloads at the very least
