@@ -5,8 +5,17 @@
 ```
 git clone git://github.com/tmayr/aula-webplayer
 yarn
-npm run dev
+yarn run dev
+```
+
+### Usage
+
+```
+# listing files
 curl http://127.0.0.1:3000/api/v1/storage
+
+# uploading files
+curl -F 'file=@(mp3file)' http://127.0.0.1:3000/api/v1/storage
 ```
 
 ### Worklog:
@@ -44,9 +53,6 @@ curl http://127.0.0.1:3000/api/v1/storage
 
 ### Possible improvements
 
-- Development experience isn't quite good, need to add server reloads at the very least
 - Missing tons of real functionality still
-- Could use better naming for routes/libs (specially the storage routes)
-- Need to finish the signatures of now-playing (still not well thought)
-- Missing middlewares to upload big files
+- Need to finish the signatures of now-playing (still not well thought, do we even need it in the backend?)
 - Missing production scripts/deployment strategy

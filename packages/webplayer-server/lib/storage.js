@@ -14,6 +14,7 @@ class Storage {
     this.bucketName = bucketName;
   }
   async list() {
+    // TODO: we should enrich this with Firebase info
     const { Contents } = await this.client
       .listObjects({ Bucket: this.bucketName })
       .promise();
