@@ -51,8 +51,13 @@ curl -F 'file=@(mp3file)' http://127.0.0.1:3000/api/v1/storage
 - Added a stream-test.html to see if files play from S3 (copy-paste from examples on the web)
 - Removed root index.js, packages scripts are now run through workspaces
 
+#### 15 minutes, Monday, December 10 (past allowed time)
+
+- Adding to Firebase whenever a file is uploaded (list method should be deprecated with this)
+- Removed now-playing
+
 ### Possible improvements
 
 - Missing tons of real functionality still
-- Need to finish the signatures of now-playing (still not well thought, do we even need it in the backend?)
 - Missing production scripts/deployment strategy
+- Migrate upload to Firebase? get rid of backend?

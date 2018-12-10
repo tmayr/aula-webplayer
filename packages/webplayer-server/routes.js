@@ -15,8 +15,6 @@ module.exports = function(app) {
   app.use("/api/v1", v1);
 
   v1.use(cors({ origin: "*" }));
-  v1.get("/now-playing", Handlers["now-playing"].get);
-  v1.post("/now-playing", Handlers["now-playing"].post);
 
   v1.get("/storage", Handlers.storage.get);
   v1.post("/storage", uploadFileMiddleware, Handlers.storage.post);
