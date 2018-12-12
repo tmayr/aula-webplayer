@@ -28,7 +28,7 @@ class Storage {
   }
   async upload(filename, payload) {
     // naively check if it's an mp3
-    // if (!filename.includes(".mp3")) throw new Error("not an mp3 file");
+    if (!filename.includes(".mp3")) throw new Error("not an mp3 file");
 
     // TODO: add validation to prevent overrides
     await this.client

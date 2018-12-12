@@ -13,7 +13,7 @@ module.exports = {
       const result = await Storage.upload(filename, buffer);
       Live.add({ filename, size });
 
-      return res.json(result);
+      return res.json({ message: result });
     } catch (e) {
       return res.status(400).json({ message: e.toString() });
     }
