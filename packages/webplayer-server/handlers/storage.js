@@ -11,7 +11,6 @@ module.exports = {
     const { originalname: filename, buffer, size } = req.file;
     try {
       const result = await Storage.upload(filename, buffer);
-      await Live.upload(filename, buffer);
       Live.add({ filename, size });
 
       return res.json(result);
